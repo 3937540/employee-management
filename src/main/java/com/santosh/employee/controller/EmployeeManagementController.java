@@ -16,7 +16,7 @@ public class EmployeeManagementController {
     @GetMapping(path = "/getname", consumes = {APPLICATION_JSON_VALUE}, produces = {APPLICATION_JSON_VALUE})
     public String getName(@RequestParam(value = "name", required = true) final String name){
         log.info("Name is {}", name );
-        return "Hello, " + name.toUpperCase();
+        return "Hello, " + name.toUpperCase() + "Welcome.";
     }
 
 }
